@@ -1,0 +1,44 @@
+gazeta_ru_worker:
+  every: 12h
+  class: GazetaRuWorker
+  queue: default
+google_news_worker_0:
+  every: 1h
+  class: GoogleNewsWorker
+  queue: default
+google_news_worker_1:
+  every: 1h
+  class: GoogleNewsWorker
+  queue: default
+google_news_worker_2:
+  every: 1h
+  class: GoogleNewsWorker
+  queue: default
+google_news_worker_3:
+  every: 1h
+  class: GoogleNewsWorker
+  queue: default
+google_news_worker_4:
+  every: 1h
+  class: GoogleNewsWorker
+  queue: default
+izvestia_worker:
+  every: 12h
+  class: IzvestiaWorker
+  queue: default
+lenta_worker:
+  every: 12h
+  class: LentaWorker
+  queue: default
+meduza_worker:
+  every: 12h
+  class: MeduzaWorker
+  queue: default
+rbc_worker:
+  every: 12h
+  class: RbcWorker
+  queue: default
+ria_worker:
+  every: 12h
+  class: RiaWorker
+  queue: default
