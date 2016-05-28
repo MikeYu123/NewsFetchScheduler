@@ -1,44 +1,49 @@
 gazeta_ru_worker:
-  every: 12h
+  cron: "30 */12 * * *"
   class: GazetaRuWorker
   queue: default
 google_news_worker_0:
-  every: 1h
+  cron: "0 * * * *"
   class: GoogleNewsWorker
   queue: default
+  args: 0
 google_news_worker_1:
-  every: 1h
+  cron: "10 * * * *"
   class: GoogleNewsWorker
   queue: default
+  args: 1
 google_news_worker_2:
-  every: 1h
+  cron: "20 * * * *"
   class: GoogleNewsWorker
   queue: default
+  args: 2
 google_news_worker_3:
-  every: 1h
+  cron: "40 * * * *"
   class: GoogleNewsWorker
   queue: default
+  args: 3
 google_news_worker_4:
-  every: 1h
+  cron: "50 * * * *"
   class: GoogleNewsWorker
   queue: default
+  args: 4
 izvestia_worker:
-  every: 12h
+  cron: "30 1,13 * * *"
   class: IzvestiaWorker
   queue: default
 lenta_worker:
-  every: 12h
+  cron: "30 2,14 * * *"
   class: LentaWorker
   queue: default
 meduza_worker:
-  every: 12h
+  cron: "30 3,15 * * *"
   class: MeduzaWorker
   queue: default
 rbc_worker:
-  every: 12h
+  cron: "30 4,16 * * *"
   class: RbcWorker
   queue: default
 ria_worker:
-  every: 12h
+  cron: "30 3,17 * * *"
   class: RiaWorker
   queue: default
